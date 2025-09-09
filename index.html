@@ -1,57 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
-<body class="flex justify-center items-center min-h-screen">
-    <div class="main bg-black  rounded-lg shadow-lg w-64 ">
-        <div class="p-2">
-        
-        <input type="number" id="userlnput"  readonly class="flex flex-col justify-center items-center bg-gray-600 rounded-lg w-full text-right shadow-lg">
-        </div>
-        <div id="numbers" class="grid grid-cols-4 gap-2">
-            <button class="text-white bg-gray-600  p-4 m-2 shadow-sm rounded-full hover:bg-white hover:text-black transition-colors duration-300">1</button>
-            <button class="text-white bg-gray-600  p-4 m-2 shadow-sm rounded-full hover:bg-white hover:text-black transition-colors duration-300">2</button>
-            <button class="text-white bg-gray-600  p-4 m-2 shadow-sm rounded-full hover:bg-white hover:text-black transition-colors duration-300">3</button>
-            <button class="text-white bg-orange-400  p-4 m-2 shadow-sm rounded-full hover:bg-white hover:text-black transition-colors duration-300">+</button>
-            <button class="text-white bg-gray-600  p-4 m-2 shadow-sm rounded-full hover:bg-white hover:text-black transition-colors duration-300">4</button>
-            <button class="text-white bg-gray-600  p-4 m-2 shadow-sm rounded-full hover:bg-white hover:text-black transition-colors duration-300">5</button>
-            <button class="text-white bg-gray-600  p-4 m-2 shadow-sm rounded-full hover:bg-white hover:text-black transition-colors duration-300">6</button>
-            <button class="text-white bg-orange-400  p-4 m-2 shadow-sm rounded-full hover:bg-white hover:text-black transition-colors duration-300">-</button>
-            <button class="text-white bg-gray-600  p-4 m-2 shadow-sm rounded-full hover:bg-white hover:text-black transition-colors duration-300">7</button>
-            <button class="text-white bg-gray-600  p-4 m-2 shadow-sm rounded-full hover:bg-white hover:text-black transition-colors duration-300">8</button>
-            <button class="text-white bg-gray-600  p-4 m-2 shadow-sm rounded-full hover:bg-white hover:text-black transition-colors duration-300">9</button>
-            <button class="text-white bg-orange-400  p-4 m-2 shadow-sm rounded-full hover:bg-white hover:text-black transition-colors duration-300">/</button>
-            <button class="text-white bg-gray-600  p-4 m-2 shadow-sm rounded-full hover:bg-white hover:text-black transition-colors duration-300">0</button>
-            <button class="text-white bg-gray-600  p-4 m-2 shadow-sm rounded-full hover:bg-white hover:text-black transition-colors duration-300">=</button>
-            <button class="text-white bg-gray-600  p-4 m-2 shadow-sm rounded-full hover:bg-white hover:text-black transition-colors duration-300">C</button>
-            <button class="text-white bg-orange-400  p-4 m-2 shadow-sm rounded-full hover:bg-white hover:text-black transition-colors duration-300">x</button>
-        </div>
-        </div>
-
-
-
-
-
-
-
-        
-            
-        
-
-
-
-
-
-
-
-
-
-
-    
-    
-</body>
+  </head>
+  <body class="flex justify-center items-center min-h-screen">
+    <div class="main bg-black rounded-lg shadow-lg w-64">
+      <div class="p-2">
+        <input
+          type="number"
+          id="userlnput"
+          readonly
+          class="bg-gray-600 rounded-lg w-full text-right shadow-lg p-2 text-white"
+        />
+      </div>
+      <div id="numbers" class="grid grid-cols-4 gap-2">
+        <button
+          class="text-white bg-gray-600 p-4 m-2 shadow-sm rounded-full hover:bg-white hover:text-black transition-colors duration-300"
+        >
+          1
+        </button>
+        <button
+          class="text-white bg-gray-600 p-4 m-2 shadow-sm rounded-full hover:bg-white hover:text-black transition-colors duration-300"
+        >
+          2
+        </button>
+        <button
+          class="text-white bg-gray-600 p-4 m-2 shadow-sm rounded-full hover:bg-white hover:text-black transition-colors duration-300"
+        >
+          3
+        </button>
+        <button
+          class="text-white bg-orange-400 p-4 m-2 shadow-sm rounded-full hover:bg-white hover:text-black transition-colors duration-300"
+        >
+          +
+        </button>
+        <button
+          class="text-white bg-gray-600 p-4 m-2 shadow-sm rounded-full hover:bg-white hover:text-black transition-colors duration-300"
+        >
+          4
+        </button>
+        <button
+          class="text-white bg-gray-600 p-4 m-2 shadow-sm rounded-full hover:bg-white hover:text-black transition-colors duration-300"
+        >
+          5
+        </button>
+        <button
+          class="text-white bg-gray-600 p-4 m-2 shadow-sm rounded-full hover:bg-white hover:text-black transition-colors duration-300"
+        >
+          6
+        </button>
+        <button
+          class="text-white bg-orange-400 p-4 m-2 shadow-sm rounded-full hover:bg-white hover:text-black transition-colors duration-300"
+        >
+          -
+        </button>
+        <button
+          class="text-white bg-gray-600 p-4 m-2 shadow-sm rounded-full hover:bg-white hover:text-black transition-colors duration-300"
+        >
+          7
+        </button>
+        <button
+          class="text-white bg-gray-600 p-4 m-2 shadow-sm rounded-full hover:bg-white hover:text-black transition-colors duration-300"
+        >
+          8
+        </button>
+        <button
+          class="text-white bg-gray-600 p-4 m-2 shadow-sm rounded-full hover:bg-white hover:text-black transition-colors duration-300"
+        >
+          9
+        </button>
+        <button
+          class="text-white bg-orange-400 p-4 m-2 shadow-sm rounded-full hover:bg-white hover:text-black transition-colors duration-300"
+        >
+          /
+        </button>
+        <button
+          class="text-white bg-gray-600 p-4 m-2 shadow-sm rounded-full hover:bg-white hover:text-black transition-colors duration-300"
+        >
+          0
+        </button>
+        <button
+          class="text-white bg-orange-400 p-4 m-2 shadow-sm rounded-full hover:bg-white hover:text-black transition-colors duration-300"
+        >
+          =
+        </button>
+        <button
+          class="text-white bg-orange-400 p-4 m-2 shadow-sm rounded-full hover:bg-white hover:text-black transition-colors duration-300"
+        >
+          C
+        </button>
+        <button
+          class="text-white bg-orange-400 p-4 m-2 shadow-sm rounded-full hover:bg-white hover:text-black transition-colors duration-300"
+        >
+          *
+        </button>
+      </div>
+    </div>
+  </body>
 </html>
